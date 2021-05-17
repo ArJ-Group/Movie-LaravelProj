@@ -13,17 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resource('member', 'MemberController');
-Route::resource('user', 'UserController');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index');
+
+Route::resource('member', 'MemberController');
+Route::resource('user', 'UserController');
 
 Route::resource('book', 'BookController');
 Route::get('/format_buku', 'BookController@format');
