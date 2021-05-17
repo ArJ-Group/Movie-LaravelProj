@@ -29,7 +29,7 @@ Route::resource('book', 'BookController');
 Route::get('/format_buku', 'BookController@format');
 Route::post('/import_buku', 'BookController@import');
 
-Route::resource('transaksi', 'TransactionController');
+Route::resource('transaction', 'TransactionController');
 Route::get('/report/trs', 'ReportController@transaksi');
 Route::get('/report/trs/pdf', 'ReportController@transaksiPdf');
 Route::get('/report/trs/excel', 'ReportController@transaksiExcel');
