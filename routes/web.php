@@ -24,3 +24,16 @@ Route::resource('member', 'MemberController');
 Route::resource('user', 'UserController');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index');
+
+Route::resource('book', 'BookController');
+Route::get('/format_buku', 'BookController@format');
+Route::post('/import_buku', 'BookController@import');
+
+Route::resource('transaksi', 'TransactionController');
+Route::get('/report/trs', 'ReportController@transaksi');
+Route::get('/report/trs/pdf', 'ReportController@transaksiPdf');
+Route::get('/report/trs/excel', 'ReportController@transaksiExcel');
+
+Route::get('/report/buku', 'ReportController@buku');
+Route::get('/report/buku/pdf', 'ReportController@bukuPdf');
+Route::get('/report/buku/excel', 'ReportController@bukuExcel');
