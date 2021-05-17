@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +36,6 @@ Route::get('/report/trs/excel', 'ReportController@transaksiExcel');
 Route::get('/report/buku', 'ReportController@buku');
 Route::get('/report/buku/pdf', 'ReportController@bukuPdf');
 Route::get('/report/buku/excel', 'ReportController@bukuExcel');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
