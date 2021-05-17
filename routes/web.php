@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,9 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'HomeController@index');
+Route::get('/home', [HomeController::class, 'home']);
+//Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/', 'HomeController@index');
 
 Route::resource('member', 'MemberController');
 Route::resource('user', 'UserController');
