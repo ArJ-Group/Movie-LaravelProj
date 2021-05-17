@@ -11,7 +11,7 @@ class BukusTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Buku::insert([
+        \App\Book::insert([
             [
               'id'  			=> 1,
               'judul'  			=> 'Belajar Pemrograman Java',

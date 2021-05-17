@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use App\Buku;
+use App\Book;
 use App\Anggota;
 use App\Transaksi;
 use Carbon\Carbon;
