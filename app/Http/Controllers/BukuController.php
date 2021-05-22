@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\Book;
+use App\Models\User;
+use App\Models\Buku;
 use Carbon\Carbon;
 use Session;
 use Illuminate\Support\Facades\Redirect;

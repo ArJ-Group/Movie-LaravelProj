@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\Book;
-use App\Anggota;
-use App\Transaksi;
+use App\Models\User;
+use App\Models\Buku;
+use App\Models\Anggota;
+use App\Models\Transaksi;
 use Carbon\Carbon;
 use Session;
 use Illuminate\Support\Facades\Redirect;

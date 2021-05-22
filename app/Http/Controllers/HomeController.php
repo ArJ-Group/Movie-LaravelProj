@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Transaction;
-use App\Member;
-use App\Book;
+use App\Models\Transaksi;
+use App\Models\Anggota;
+use App\Models\Buku;
 use Auth;
 
 
