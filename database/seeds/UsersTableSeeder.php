@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
        \App\User::insert([
             [
               'id'  			=> 1,
-              'name'  			=> 'Gilacoding - Admin',
+              'name'  			=> 'Arjen - Admin',
               'username'		=> 'admin123',
               'email' 			=> '123456@gilacoding.com',
               'password'		=> bcrypt('admin123'),
@@ -26,7 +26,7 @@ class UsersTableSeeder extends Seeder
             ],
             [
               'id'  			=> 2,
-              'name'  			=> 'Gilacoding - User',
+              'name'  			=> 'Arjen - User',
               'username'		=> 'user123',
               'email' 			=> '654321@gilacoding.com',
               'password'		=> bcrypt('user123'),
