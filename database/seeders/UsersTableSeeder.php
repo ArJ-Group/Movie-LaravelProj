@@ -1,5 +1,5 @@
 <?php
-
+namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
               'id'  			=> 1,
               'name'  			=> 'Arjen - Admin',
               'username'		=> 'admin123',
-              'email' 			=> '123456@gilacoding.com',
+              'email' 			=> 'arjen1@gmail.com',
               'password'		=> bcrypt('admin123'),
               'gambar'			=> NULL,
               'level'			=> 'admin',
@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
               'id'  			=> 2,
               'name'  			=> 'Arjen - User',
               'username'		=> 'user123',
-              'email' 			=> '654321@gilacoding.com',
+              'email' 			=> 'arjen2@gmail.com',
               'password'		=> bcrypt('user123'),
               'gambar'			=> NULL,
               'level'			=> 'user',
